@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站 - 首页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo"><b>MyProject</b></div>
+        <ul class="nav-links">
+            <li><a href="/">首页</a></li>
+            <li><a href="/login.html">登录</a></li>
+            <li><a href="/register.html">注册</a></li>
+            <li><a href="/dashboard.html">个人中心</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>欢迎来到我的网站</h1>
+        <p style="margin-top: 15px; color: #666;">
+            这是一个任何人都可以浏览的公共页面。在这个项目中，我们将逐步实现多用户注册、登录以及私人内容管理功能。
+        </p>
+        
+        <div class="action-buttons">
+            <a href="/login.html" class="btn">立即登录</a>
+            <a href="/register.html" class="btn btn-outline">注册账号</a>
+        </div>
+    </main>
+</body>
+</html>
